@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p
+set > /tmp/vars && sed '/functions/,$!d' /tmp/vars
